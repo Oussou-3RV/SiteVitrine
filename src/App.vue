@@ -1,8 +1,8 @@
 
 <template>
-    <Header />
-    <main class="flex-1 mt-[80px]"> <!-- on garde de l'espace pour le header fixe -->
-      <RouterView />
+   <Header />
+   <main class="flex-1 mt-[80px]  border-2 border-green-300"> <!-- on garde de l'espace pour le header fixe -->
+   <RouterView />
     </main>
     <Footer />
 </template>
