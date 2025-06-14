@@ -2,7 +2,8 @@
   <section class="py-16 px-6 bg-white">
     <h1 class="text-4xl font-bold text-center mb-10 text-orange-600">Notre Menu</h1>
 
-    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+    <CardPlat :plats="plats"/>
+    <!-- <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
       <div
         v-for="(plat, index) in plats"
         :key="index"
@@ -14,31 +15,33 @@
           <p class="text-sm text-gray-700 mt-2">{{ plat.description }}</p>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 
 <script setup>
+import CardPlat from '../components/cardPlat.vue';
+
 const plats = [
   {
     nom: 'Poulet Yassa',
     description: 'Poulet mariné aux oignons et citron, servi avec du riz blanc.',
-    image: 'https://source.unsplash.com/featured/?african,food,yassa'
+    image: '/public/yassa.jpg'
   },
   {
-    nom: 'Tieboudienne',
-    description: 'Riz au poisson, légumes mijotés – un classique sénégalais.',
-    image: 'https://source.unsplash.com/featured/?african,food,fish'
+    nom: 'Garba',
+    description: 'Attieke au poisson thon.',
+    image: '/public/garba.jpg'
   },
   {
     nom: 'Alloco',
     description: 'Bananes plantain frites, servies avec une sauce pimentée.',
-    image: 'https://source.unsplash.com/featured/?plantain,food'
+    image: '/public/alloco.webp'
   },
   {
     nom: 'Attiéké et poisson braisé',
     description: 'Semoule de manioc et poisson grillé avec légumes.',
-    image: 'https://source.unsplash.com/featured/?attieke,fish'
+    image: '/public/attiekePoissonBr.jpg'
   },
   {
     nom: 'Mafé',

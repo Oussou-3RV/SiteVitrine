@@ -1,6 +1,7 @@
 <template>
   <section class="py-16 px-6 bg-orange-50 min-h-screen">
     <div class="max-w-2xl mx-auto">
+
       <h1 class="text-4xl font-bold text-center text-orange-600 mb-6">Contactez-nous</h1>
       <p class="text-center text-gray-700 mb-10">
         Pour toute commande ou question, remplissez le formulaire ci-dessous ou appelez-nous directement.
@@ -10,7 +11,7 @@
       <div class="text-center mb-8">
         <p class="text-lg">📞 Appelez-nous au : 
           <a href="tel:+15141234567" class="text-orange-700 font-semibold hover:underline">
-            +1 514-123-4567
+            +1 873 307 11-62
           </a>
         </p>
       </div>

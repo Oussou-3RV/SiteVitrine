@@ -1,6 +1,6 @@
 <template>
     <header class="bg-white text-white relative shadow-md top-0 w-full h-screen z-40 font-mono" :class="{beFixed: menuOpen}">
-        <div class="max-w-7xl sticky top-0 mx-auto px-4 sm:px-6 lg:px-8 py-4 border-2 border-green-600 flex justify-between items-center" >
+        <div class="max-w-7xl sticky top-0 mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center" >
             <!-- Logo -->
             <div class="text-3xl font-bold text-orange-600">
                 <RouterLink to="/">ANTALIOU</RouterLink>
@@ -8,10 +8,10 @@
 
             <!-- Menu desktop -->
             <nav class="hidden text-lg lg:flex space-x-6 z-50">
-                <RouterLink to="/" class="hover:text-orange-600">Accueil</RouterLink>
-                <RouterLink to="/menu" class="hover:text-orange-600">Menu</RouterLink>
-                <RouterLink to="/about" class="hover:text-orange-600">À propos</RouterLink>
-                <RouterLink to="/contact" class="hover:text-orange-600">Contact</RouterLink>
+                <RouterLinkk to="/" label="Accueil" />
+                <RouterLinkk to="/menu" label="Menu" />
+                <RouterLinkk to="/about" label="À propos" />
+                <RouterLinkk to="/" label="Contact" />
             </nav>
 
             <!-- Bouton menu mobile -->
@@ -23,15 +23,15 @@
 
         <!-- Menu mobile -->
         <div v-if="menuOpen"
-            class="lg:hidden text-xl fixed w-full text-red-600 pt-60 bg-white h-screen  flex flex-col items-center space-y-8 z-50">
+            class="lg:hidden text-xl fixed w-full text-red-600 pt-40 bg-white h-screen  flex flex-col items-center space-y-8 z-50">
             <RouterLink @click="closeMenu" to="/" class="block hover:text-green-600">Accueil</RouterLink>
             <RouterLink @click="closeMenu" to="/menu" class="block hover:text-green-600">Menu</RouterLink>
             <RouterLink @click="closeMenu" to="/about" class="block hover:text-green-600">À propos</RouterLink>
             <RouterLink @click="closeMenu" to="/contact" class="block hover:text-green-600">Contact</RouterLink>
         </div>
 
-        <div class="text-center py-10 mt-9 border-2 border-pink-800">
-            <h1 class="text-5xl  font-bold text-orange-600 ">Bienvenue chez ANTALIOU</h1>
+        <div class="text-center py-10 mt-9 ">
+            <h1 class="text-5xl  font-bold text-orange-600 ">ANTALIOU</h1>
             <p class="mt-4 text-lg">Savourez les meilleurs plats africains faits maison !</p>
         </div>
         
@@ -42,6 +42,7 @@
 <script setup>
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
+import RouterLinkk from './RouterLinkk.vue'
 
 const menuOpen = ref(false)
 const closeMenu = () => {
