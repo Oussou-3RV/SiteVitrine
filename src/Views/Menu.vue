@@ -44,12 +44,12 @@ const plats = [
     image: '/public/attiekePoissonBr.jpg'
   },
   {
-    nom: 'Mafé',
-    description: 'Viande en sauce d’arachide, servie avec du riz.',
+    nom: 'Soupe de poisson',
+    description: 'Soupe piméte avec du poisson.',
     image: 'https://source.unsplash.com/featured/?mafe,african,food'
   },
   {
-    nom: 'Ndolé',
+    nom: 'Placali sauce kôpè',
     description: 'Épinards amers aux arachides avec viande ou crevettes.',
     image: 'https://source.unsplash.com/featured/?ndole,cameroon,food'
   }

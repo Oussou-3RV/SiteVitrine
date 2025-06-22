@@ -57,7 +57,7 @@ const envoye = ref(false)
 const envoyerMessage = () => {
   // Ici on simule l’envoi (pas de backend)
   console.log('Message envoyé :', nom.value, telephone.value, message.value)
-  envoye.value = true
+  envoye.value = true   
 
   // Réinitialisation du formulaire
   nom.value = ''
@@ -68,5 +68,7 @@ const envoyerMessage = () => {
   setTimeout(() => {
     envoye.value = false
   }, 3000)
+
+  
 }
 </script>
